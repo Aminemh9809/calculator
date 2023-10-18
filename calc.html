@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <meta name="description" content="Simple Calculator With Dark Mode." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/calculator.ico">
+    <link rel="stylesheet" href="dark.css" id="theme" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <input class= "inputs1" type="text" id="input1" readonly />
+            <input class= "inputs1" type="text" id="input2" readonly />
+            <input class= "inputs1" type="text" id="input3" readonly />
+
+            <div class="first-row">
+                <input class= "inputs" type="text" id="input4" placeholder="Result" readonly />
+
+                <input type="button" value="C" onclick="clearResult()" id="clear-button" />
+
+            </div>
+            <div class="second-row">
+                <input type="button" value="1" onclick="addToResult('1')" />
+                <input type="button" value="2" onclick="addToResult('2')" />
+                <input type="button" value="3" onclick="addToResult('3')" />
+                <input class="operator" type="button" value="+" onclick="add('+')" />
+            </div>
+            <div class="third-row">
+                <input type="button" value="4" onclick="addToResult('4')" />
+                <input type="button" value="5" onclick="addToResult('5')" />
+                <input type="button" value="6" onclick="addToResult('6')" />
+                <input class="operator" type="button" value="-" onclick="add('-')" />
+            </div>
+            <div class="fourth-row">
+                <input type="button" value="7" onclick="addToResult('7')" />
+                <input type="button" value="8" onclick="addToResult('8')" />
+                <input type="button" value="9" onclick="addToResult('9')" />
+                <input class="operator" type="button" value="x" onclick="add('*')" />
+            </div>
+            <div class="fifth-row">
+                <input type="button" value="0" onclick="addToResult('0')">
+                <input class="operator" type="button" value="/" onclick="add('/')" />
+
+                <input class="operator" type="button" value="." onclick="addToResult('.')">
+                <input class="operator" type="button" value="=" onclick="calculateResult()" />
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
